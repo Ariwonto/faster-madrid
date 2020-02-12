@@ -6,5 +6,5 @@ const data = require('./data.json');
   if (debug) {
     console.log(data);
   } else {
-    await publish(data); 
+    publish(data); 
   }
