@@ -1,6 +1,6 @@
 {
-  "sensorId": "Faster-Madrid",
-  "secretKey": "GTKHGKIGMCNHACI",
+  "sensorId": "Faster-Madrid-1",
+  "secretKey": "EYAXOJNCNGXSPOD",
   "debug": true,
   "provider": "https://nodes.devnet.iota.org",
   "endpoint": "https://us-central1-madrid-268012.cloudfunctions.net/newData",
