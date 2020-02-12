@@ -1,7 +1,7 @@
 
   {
-    "name": "AT-AT",
-    "model": "All Terrain Armored Transport",
-    "manufacturer": "Imperial Department of Military Research",
-    "vehicle_class": "assault walker"
+    "temp": "25",
+    "alt": "73",
+    "accu": "78"
+    
   }
