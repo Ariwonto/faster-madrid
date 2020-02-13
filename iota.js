@@ -4,6 +4,7 @@ const { asciiToTrytes } = require('@iota/converter');
 const { storeKey } = require('./keyStorage');
 const { provider } = require('./config.json');
 
+
 // Initialise MAM State
 let mamState = Mam.init(provider);
 
@@ -17,7 +18,8 @@ const generateRandomKey = length => {
 // Publish to Tangle
 exports.publish = async payload => {
   const time = Date.now();
-  const packet = { time, data: { ...payload } };
+  const live = require('./data.json');
+  const packet = { time, live, data: { ...payload } };
 
   // Change MAM encryption key on each loop
   let mamKey = generateRandomKey(81);
