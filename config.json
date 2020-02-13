@@ -1,8 +1,8 @@
 {
-  "sensorId": "Faster-Madrid-1",
-  "secretKey": "EYAXOJNCNGXSPOD",
+  "sensorId": "Faster-Madrid",
+  "secretKey": "RXAICOQQPFNCOAB",
   "debug": false,
   "provider": "https://nodes.devnet.iota.org",
-  "endpoint": "https://us-central1-madrid-268012.cloudfunctions.net/newData",
+  "endpoint": "https://us-central1-fasterframe-cc892.cloudfunctions.net/newData",
   "serverUrl": "https://swapi.co/api/vehicles/"
 }
