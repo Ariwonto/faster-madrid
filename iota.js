@@ -17,7 +17,7 @@ const generateRandomKey = length => {
 
 // Publish to Tangle
 exports.publish = async payload => {
-  const time = Date.now();
+  const time = require('./data.json');
   const live = require('./data.json');
   const packet = { time, live, data: { ...payload } };
 
