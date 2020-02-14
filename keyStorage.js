@@ -2,13 +2,14 @@ const fetch = require('node-fetch');
 const { debug, endpoint, secretKey, sensorId } = require('./config.json');
 
 // Push key to data marketplace.
-exports.storeKey = async (sidekey, root, time) => {
+exports.storeKey = async (sidekey, root, time, live) => {
   if (debug) return 'Debug mode';
 
   const packet = {
     sidekey,
     root,
     time,
+    live,
   };
 
   try {
