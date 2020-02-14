@@ -19,7 +19,7 @@ const generateRandomKey = length => {
 exports.publish = async payload => {
   const time = Date.now();
   const live = require('./data.json');
-  const packet = { time, live, data: { ...payload } };
+  const packet = { time, data: { ...payload } };
 
   // Change MAM encryption key on each loop
   let mamKey = generateRandomKey(81);
