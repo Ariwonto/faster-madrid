@@ -10,7 +10,9 @@
     "@iota/converter": "^1.0.0-beta.8",
     "@iota/mam": "^0.7.2",
     "node-fetch": "^2.3.0",
-    "i2c-bus": "^5.1.0"
+    "i2c-bus": "^5.1.0",
+    "moment": "^2.22.2",
+    "node-dht-sensor": "0.0.34"
   },
   "devDependencies": {
     "jshint": "^2.10.2"
