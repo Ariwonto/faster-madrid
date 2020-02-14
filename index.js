@@ -3,15 +3,15 @@ const { publish } = require('./iota');
 const { debug, serverUrl } = require('./config.json');
 const data = require('./data.json');
 
-// // EXAMPLE 1: read static data from file/database
-// data.forEach(async payload => {
-//   if (debug) {
-//     console.log(payload);
-//   } else {
-//     // Publish sensor data to marketplace
-//     await publish(payload); // your sensor data goes here. Payload is any content in JSON format
-//   }
-// });
+// EXAMPLE 1: read static data from file/database
+data.forEach(async payload => {
+  if (debug) {
+    console.log(payload);
+  } else {
+    // Publish sensor data to marketplace
+    await publish(payload); // your sensor data goes here. Payload is any content in JSON format
+  }
+});
 
 // // EXAMPLE 2: request data from server or sensor
 // const queryData = async delay => {
